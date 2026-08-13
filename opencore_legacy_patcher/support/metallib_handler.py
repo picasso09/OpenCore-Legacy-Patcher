@@ -97,7 +97,7 @@ class MetalLibraryObject:
 
         parsed_version = cast(packaging.version.Version, packaging.version.parse(self.host_version))
 
-        if os_data.os_conversion.os_to_kernel(str(parsed_version.major)) < os_data.os_data.sequoia:
+        if os_data.os_conversion.os_to_kernel(str(parsed_version.major)) < os_data.os_data.tahoe:
             self.error_msg = "MetallibSupportPkg is not required for macOS Sonoma or older"
             logging.warning(f"{self.error_msg}")
             return

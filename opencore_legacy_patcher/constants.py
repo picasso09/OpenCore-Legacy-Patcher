@@ -249,6 +249,7 @@ class Constants:
             os_data.os_data.ventura,
             os_data.os_data.sonoma,
             os_data.os_data.sequoia,
+            os_data.os_data.tahoe,
         ]
 
     @property
@@ -795,6 +796,10 @@ class Constants:
         return self.icns_resource_path / Path("Sequoia.icns")
 
     @property
+    def icon_path_macos_tahoe(self):
+        return self.icns_resource_path / Path("Sequoia.icns")
+
+    @property
     def gui_path(self):
         return self.payload_path / Path("Icon/Resources.zip")
 
@@ -828,6 +833,7 @@ class Constants:
             str(self.icon_path_macos_ventura),
             str(self.icon_path_macos_sonoma),
             str(self.icon_path_macos_sequoia),
+            str(self.icon_path_macos_tahoe),
         ]
 
     sbm_values = [
