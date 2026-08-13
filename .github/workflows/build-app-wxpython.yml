@@ -12,7 +12,7 @@ permissions: write-all
 jobs:
   build:
     name: Build wxPython
-    runs-on: x86_64_tahoe
+    runs-on: macos-26-intel
     
     if: github.repository_owner == 'picasso09'
 
